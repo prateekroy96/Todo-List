@@ -1,0 +1,26 @@
+<div id="todo-item" class="border border-dark rounded d-flex justify-content-between"
+    style="margin-top:5px;margin-left:5px;margin-right:5px;">
+    <div align="left" class="form-group flex-grow-1" style="padding-top: 5px;padding-left: 10px;padding-right: 10px">
+
+        <button (click) = "toggle()" class="{{color}}" style="position:relative;top: 14px;width: 40px;"><i class="{{done}}" aria-hidden="true"></i></button>
+
+        <h5 [ngClass]="line()" style="display:inline-block;position:relative;top:5px;font-size: 20px; padding-left: 10px">
+            {{item.id}}. {{item.title}}
+        </h5>
+        <p class="d-flex" style="padding-left: 90px;margin-bottom: 0px">
+            <span class="flex-grow-1">
+                <h6>Due Date: {{correctedDate}}</h6>
+            </span>
+            <span class="flex-grow-1">
+                <h6>Remaining duration: {{duration}}</h6> 
+            </span>
+        </p>
+    </div>
+    <span style="width: 200px;padding-top: 19px">
+        
+        <button (click) = "up()" class="btn btn-light" style="width: 40px;margin-left:10px;margin-right:10px"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+        <button (click) = "down()" class="btn btn-light" style="width: 40px;margin-left:10px;margin-right:10px"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        <button (click) = "delete()" class="btn btn-dark" style="width: 40px;margin-left:10px;margin-right:10px"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+    </span>
+
+</div>

@@ -1,0 +1,29 @@
+<div style="height:90vh; padding-top:5vh">
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">
+                <h6>Username:</h6>
+            </label>
+            <input #username (keyup.enter)="Enter(username.value)" type="text" class="form-control" placeholder="Enter Username">
+        </div>
+        <input (click)="Enter(username.value)"  type="button" class="btn btn-dark btnSeccion" value="Get Started" />
+ 
+    <div style="padding-top: 80px">
+        <h6><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Instructions:</h6>
+        <ul>
+            <li>Enter a username to get started with.</li>
+            <li>Queue in your task buy adding the task name and its due date. The application with keep its record.</li>
+            <li>You can later modify the record by adding/removing tasks, changing its completion status and/or priority.</li>
+            <li>A dummy task is added as an example.</li>
+        </ul>
+        <h6><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> About The Project:</h6>
+        The project is made entirely using
+        <ul>
+            <li>Angular</li>
+            <li>Boostrap 4</li>
+            <li>jQuery</li>
+            <li>Font Awesome</li>
+        </ul>
+    </div>
+
+</div>

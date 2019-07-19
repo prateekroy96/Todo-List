@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+.hidden {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00060D;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #f8f9fa;
+    border-radius: 100\px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1d2124;
+}
+
+body {
+    background-image: url("assets/hourglass.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #cccccc;
+    background-size: 1920px 1080px;
+}
